@@ -11,6 +11,5 @@ export const test = baseTest.extend<HooksFixture>({
         await loginPage.gotoPetStore()
         use(undefined)
     },
-    
 
 })

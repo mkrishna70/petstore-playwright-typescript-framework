@@ -14,11 +14,18 @@ export class LoginPage{
         this.passwordInput = page.locator('input[name="password"]')
         this.loginBtn = page.getByRole('button', { name: 'Login' })
     }
-
+    /**
+     * Open PET STORE APPLICATION
+     */
     async gotoPetStore(){
         await this.page.goto(`${process.env.BASE_URL}`)
     }
-
+    /**
+     * Enter User Credentials
+     * 
+     * @param username 
+     * @param password 
+     */
     async enterUserCredentials(username:string,password:string){
         await this.signinLink.click()
         await this.userNameInput.fill(username);
