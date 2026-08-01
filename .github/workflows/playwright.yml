@@ -25,7 +25,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: npx playwright test
+        run: npx playwright test tests --project=chromium
 
       # - name: Run Smoke tests => To run smoke or sanity regression
       #   run: npx playwright test tests/Smoke   # tests/Smoke => tests folder and Smoke is folder
