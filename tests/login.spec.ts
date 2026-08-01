@@ -19,3 +19,8 @@ test('title 4', async ({ page }) => {
   await page.goto('https://demowebshop.tricentis.com/');
 
 })
+
+test('title 5', async ({ page }) => {
+  await page.goto('https://demowebshop.tricentis.com/');
+
+})
