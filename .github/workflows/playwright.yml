@@ -69,7 +69,7 @@ jobs:
       run: npm install -g allure-commandline
 
     - name: Download all Allure results
-      uses: actions/download-artifcat@v4
+      uses: actions/download-artifact@v4
       with: 
         path: allure-results
       
