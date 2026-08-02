@@ -11,7 +11,7 @@ jobs:
 
     strategy:    # for sharding purpose
       matrix:
-      shard : [1,2,3,4]   #tell github to create 4 parallel job
+        shard : [1,2,3,4]   #tell github to create 4 parallel job
  
     steps:
       - name: Checkout code
